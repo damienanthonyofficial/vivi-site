@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vivi Il Momento Label</title>
+<meta name="description" content="Vivi Il Momento — a label by Damelo. Live in the moment.">
+<meta property="og:title" content="Vivi Il Momento Label">
+<meta property="og:description" content="A label by Damelo. Live in the moment.">
+<meta property="og:image" content="https://www.vivilmomentolabel.com/assets/og-image.jpg">
+<meta property="og:url" content="https://www.vivilmomentolabel.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ===== EDIT YOUR LINKS IN THE HTML BELOW (search for "EDIT") ===== */
+  :root { --bg:#0a0908; --ink:#ece6df; --mut:#a39a91; --cop:#d9a184; --cop2:#b8735a; --line:#1f1a17; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--cop); }
+  a:hover { color: #f0c3a8; }
+  .serif { font-family: "Cormorant Garamond", Georgia, serif; }
+  .caps { font-size: 12px; letter-spacing: .3em; text-transform: uppercase; }
+
+  .fur { background-image: linear-gradient(180deg, rgba(10,9,8,.55), rgba(10,9,8,.35) 40%, rgba(10,9,8,.85)), url(assets/fur.jpg); background-size: auto, 600px 600px; }
+  .fur-soft { background-image: linear-gradient(180deg, rgba(10,9,8,.86), rgba(10,9,8,.92)), url(assets/fur.jpg); background-size: auto, 600px 600px; }
+
+  header { position: relative; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; border-bottom: 1px solid #2a2420; }
+  .glow { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 46% 34% at 50% 58%, rgba(217,161,132,.16), rgba(217,161,132,0) 70%); }
+  nav { position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 28px 5%; }
+  nav .brand { color: var(--cop); }
+  nav .links { display: flex; gap: 28px; }
+  nav .links a { color: var(--ink); text-decoration: none; }
+  .hero { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; padding: 40px 6% 80px; text-align: center; }
+  .hero img { width: 72%; max-width: 780px; height: auto; filter: drop-shadow(0 6px 30px rgba(217,161,132,.18)); }
+  .tagline { margin: 0; font-size: 18px; letter-spacing: .6em; text-transform: uppercase; color: #e6c2ab; padding-left: .6em; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 30px; border: 1px solid var(--cop2); color: var(--ink); background: transparent; text-decoration: none; font: 500 12px Inter, sans-serif; letter-spacing: .3em; text-transform: uppercase; cursor: pointer; transition: background .2s, color .2s; }
+  .btn:hover { background: var(--cop); color: #140d09; }
+
+  #about { padding: 130px 6%; text-align: center; }
+  #about .wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 26px; }
+  #about .statement { margin: 0; font-size: 34px; line-height: 1.35; }
+  .by { display: flex; align-items: center; gap: 16px; margin-top: 10px; }
+  .by img { height: 44px; width: auto; }
+
+  #contact { padding: 100px 5%; border-top: 1px solid var(--line); }
+  #contact .wrap { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; justify-content: space-between; }
+  .col { flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px; }
+  h2 { margin: 0; font-weight: 400; font-style: italic; font-size: 40px; color: var(--cop); }
+  .muted { color: var(--mut); }
+  .social { display: flex; flex-wrap: wrap; gap: 22px; font-size: 15px; }
+  .social a, .email { text-decoration: none; }
+  .email { font-size: 18px; }
+
+  footer { padding: 34px 5%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: #8f867d; border-top: 1px solid var(--line); }
+
+  @media (max-width: 640px) {
+    .hero img { width: 92%; }
+    .tagline { font-size: 14px; letter-spacing: .4em; padding-left: .4em; }
+    #about { padding: 90px 7%; }
+    #about .statement { font-size: 26px; }
+    h2 { font-size: 34px; }
+    nav .links { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="fur">
+  <div class="glow"></div>
+  <nav aria-label="Main">
+    <span class="caps brand">Vivi · Il · Momento</span>
+    <div class="links caps">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <img src="assets/logo.png" alt="Vivi Il Momento Label">
+    <p class="tagline serif">Live in the moment</p>
+    <!-- EDIT: paste your SoundCloud link -->
+    <a class="btn" href="https://soundcloud.com/YOUR-SOUNDCLOUD" target="_blank" rel="noopener" style="margin-top:18px">Listen on SoundCloud</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <p class="caps" style="margin:0;color:var(--cop)">About</p>
+    <p class="statement serif">Vivi Il Momento was a long time coming. Built by Damelo on his own terms, it's a home for music that doesn't wait for anyone's approval. Every release is a moment captured: made in the studio, meant for the dancefloor, and owned by the people who made it.</p>
+    <div class="by">
+      <span class="caps muted" style="font-size:11px">A label by</span>
+      <img src="assets/damelo.png" alt="Damelo">
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="fur-soft">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="serif">Stay in the moment</h2>
+      <p class="muted" style="margin:0;font-size:15px">Be first to hear the first releases.</p>
+      <!-- EDIT: change the email address in this link -->
+      <a class="btn" style="align-self:flex-start;margin-top:8px" href="mailto:hello@vivilmomentolabel.com?subject=Add%20me%20to%20the%20list">Join the list</a>
+    </div>
+    <div class="col">
+      <p class="caps muted" style="margin:0;font-size:11px">Contact</p>
+      <!-- EDIT: label email -->
+      <a class="email" href="mailto:hello@vivilmomentolabel.com">hello@vivilmomentolabel.com</a>
+      <p class="caps muted" style="margin:14px 0 0;font-size:11px">Follow</p>
+      <div class="social">
+        <!-- EDIT: paste your profile links -->
+        <a href="https://instagram.com/YOUR-INSTAGRAM" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://soundcloud.com/YOUR-SOUNDCLOUD" target="_blank" rel="noopener">SoundCloud</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="caps" style="font-size:11px">
+  <span>© 2026 Vivi Il Momento</span>
+  <span>Live in the moment</span>
+</footer>
+
+</body>
+</html>
